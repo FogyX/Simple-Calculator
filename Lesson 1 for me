@@ -1,0 +1,58 @@
+
+// Привет мир
+Console.WriteLine("Привет, мир!");
+
+// Использовал флоат
+float a = 1.7F;
+Console.WriteLine(a);
+
+// Как тебя зовут?
+Console.Write("Как тебя зовут? ");
+string? name = Console.ReadLine();
+Console.WriteLine($"Тебя зовут {name}");
+
+// Тестил иф елс
+string eat = "пирог";
+
+if (eat == "пицца") {
+    Console.WriteLine("Вы любите пиццу.");
+}
+
+else if (eat == "яичница") {
+    Console.WriteLine("Вы любите яичницу");
+}
+
+else if (eat == "куриные крылышки") {
+    Console.WriteLine("Вы любите куриные крылышки");
+}
+
+else if (eat == "хуй Арсения") {
+    Console.WriteLine("Вы любите сосать хуй Арсения,\n гей вы ссаный");
+}
+
+else if (eat == "овощьной суп") {
+    Console.WriteLine("Вы любите овощной суп");
+}
+
+else {
+    Console.WriteLine("Я не знаю ваши предпочтения");
+}
+
+
+// Как тебя зовут но сложнее для меня
+Console.Write("Как тебя зовут? ");
+string? name1 = Console.ReadLine();
+if (name1 == "Семён")
+{
+    Console.WriteLine("Красавчик!");
+}
+
+else if (name1 == "Дима")
+{
+    Console.WriteLine("Пошёл нахуй");
+}
+
+else
+{
+    Console.WriteLine("Ну ок");
+}
