@@ -96,5 +96,4 @@ function buttonEquals() {
         outputField.textContent = 'Invalid input!'
         inputField.value = '';
     }
-    
 }
