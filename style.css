@@ -1,0 +1,129 @@
+body {
+    background: #eeeff1;
+
+    --aquamarine-dark: rgb(0, 197, 197);
+    --aquamarine-light: rgb(159, 255, 223);
+}
+
+div.main_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+div.calculator_border {
+    --calculator-width: 350px;
+
+    width: var(--calculator-width);
+    background-color: cadetblue;
+
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.input_field {
+    background-color: aquamarine;
+    position: relative;
+    width: calc(var(--calculator-width) * 0.8);
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+div.input_field:hover {
+    background-color: var(--aquamarine-dark);
+}
+
+input.inp {
+    border: 0;
+    outline: 0;
+
+    background-color: inherit;
+    position: relative;
+    width: 400px;
+
+    font-size: 20px;
+}
+
+div.output_field {
+    background-color: aquamarine;
+    font-size: 20px;
+    position: relative;
+    width: calc(var(--calculator-width) * 0.8);
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+div.buttons_wrap {
+    --buttons-wrapper-width: var(--calculator-width);
+    --buttons-wrapper-height: auto;
+
+    position: relative;
+    width: var(--buttons-wrapper-width);
+    height: var(--buttons-wrapper-height);
+    margin-top: 30px;
+    margin-left: calc((100% - var(--buttons-wrapper-width)) / 2);
+    margin-right: calc((100% - var(--buttons-wrapper-width)) / 2);
+
+    display: flex;
+    flex-flow: wrap;
+
+    font-family: monospace;
+}
+
+div.ui_button {
+    --button-size: calc(var(--buttons-wrapper-width) / 8);
+    --button-margin: calc(var(--button-size) / 2);
+
+    width: var(--button-size);
+    height: var(--button-size);
+    margin: var(--button-margin);
+    margin-bottom: calc(var(--button-margin)* 0.75);
+    position: relative;
+
+    background-color: aqua;
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+div.ui_button:hover {
+    background-color: var(--aquamarine-dark);
+}
+
+div.ui_button:active {
+    background-color: var(--aquamarine-light);
+}
+
+span.ui_text {
+    font-size: 40px;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    user-select: none;
+}
