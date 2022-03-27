@@ -6,7 +6,7 @@ let outputField = document.getElementById('out');
 
 const buttons = document.querySelectorAll('.ui_button');
 
-const validSymbols = ['+', '-', '*', '/'];
+const validSymbols = ['+', '-', '*', '/', '(', ')'];
 
 const options = {
     'button7': buttonAddSymbol,
@@ -83,7 +83,8 @@ function buttonPower() {
 function buttonEquals() {
 
     let isValid = true;
-    let value = inputField.value.replace('^', '**');
+    let value = inputField.value.replaceAll('^', '**');
+    console.log(value);
 
     for (let i = 0; i < value.length; i++) {
         if (isNaN(value[i]) && !(validSymbols.includes(value[i]))) {
