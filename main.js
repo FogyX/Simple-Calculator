@@ -26,7 +26,9 @@ const options = {
     'buttonEquals': buttonEquals,
     'buttonDivide': buttonAddSymbol,
     'buttonClear': buttonClear,
-    'buttonPower': buttonPower
+    'buttonPower': buttonPower,
+    'buttonBracketOpen': buttonAddSymbol,
+    'buttonBracketClose': buttonAddSymbol
 }
 
 buttons.forEach(element => {
