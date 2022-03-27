@@ -28,7 +28,8 @@ const options = {
     'buttonClear': buttonClear,
     'buttonPower': buttonPower,
     'buttonBracketOpen': buttonAddSymbol,
-    'buttonBracketClose': buttonAddSymbol
+    'buttonBracketClose': buttonAddSymbol,
+    'buttonDot': buttonAddSymbol
 }
 
 buttons.forEach(element => {
@@ -88,7 +89,6 @@ function buttonEquals() {
 
     for (let i = 0; i < value.length; i++) {
         if (isNaN(value[i]) && !(validSymbols.includes(value[i]))) {
-
             isValid = false;
             break;
         }
