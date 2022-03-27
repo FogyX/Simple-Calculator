@@ -25,7 +25,8 @@ const options = {
     'button0': buttonAddSymbol,
     'buttonEquals': buttonEquals,
     'buttonDivide': buttonAddSymbol,
-    'buttonClear': buttonClear
+    'buttonClear': buttonClear,
+    'buttonPower': buttonPower
 }
 
 buttons.forEach(element => {
@@ -52,6 +53,7 @@ function checkLength() {
         inputField.value =  inputField.value.slice(0, -1);
     }
 }
+
 /*
 * Вот тут идут все функции кнопок
 */
@@ -72,9 +74,14 @@ function buttonClear() {
     inputField.value = '';
 }
 
+function buttonPower() {
+    inputField.value += '^';
+}
+
 function buttonEquals() {
+
     let isValid = true;
-    let value = inputField.value;
+    let value = inputField.value.replace('^', '**');
 
     for (let i = 0; i < value.length; i++) {
         if (isNaN(value[i]) && !(validSymbols.includes(value[i]))) {
@@ -96,4 +103,5 @@ function buttonEquals() {
         outputField.textContent = 'Invalid input!'
         inputField.value = '';
     }
+    
 }

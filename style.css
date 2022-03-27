@@ -5,6 +5,11 @@ body {
     --aquamarine-light: rgb(159, 255, 223);
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
 div.main_wrapper {
     width: 100%;
     height: 100%;
@@ -118,7 +123,7 @@ div.ui_button:active {
 }
 
 span.ui_text {
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     margin: 0;
     top: 50%;
